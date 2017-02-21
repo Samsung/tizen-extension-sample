@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>InApp-Purchase Sample App</title>
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="getItem()">
+	<div class="ui-page" id="main">
+		<header class="ui-header">
+			<h2 class="ui-title">Main</h2>
+		</header>
+		<div class="ui-content content-padding">
+			<ul class="ui-listview">
+				<div id="gettingItems"></div>
+			</ul>
+		</div>
+		<footer class="ui-footer ui-bottom-button">	
+			<button class="ui-btn" onclick="button()">My Items</button>
+		</footer>
+	</div>
+	<div class="ui-page" id="successcb">
+		<header class="ui-header">
+			<h2 class="ui-title">Success</h2>
+		</header>
+		<div class="ui-content">
+			<div id="success"></div>
+		</div>
+		<footer class="ui-footer ui-bottom-button">
+			<button class="ui-btn" onclick="mainpage()">OK</button>			
+		</footer>
+	</div>
+	
+	<div class="ui-page" id="error">
+		<header class="ui-header">
+			<h2 class="ui-title">Error</h2>
+		</header>
+		<div class="ui-content">
+			<div id="fail"></div>
+		</div>
+		<footer class="ui-footer ui-bottom-button">
+			<button class="ui-btn" onclick="mainpage()">OK</button>			
+		</footer>
+	</div>
+	<div class="ui-page ui-page-active" id="getting">
+		<div class="ui-content">
+			<h3>Getting item list</h3>
+		</div>
+	</div>
+	<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+	<script type="text/javascript" src="js/circle-helper.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/lowBatteryCheck.js"></script>
+</body>
+</html>
