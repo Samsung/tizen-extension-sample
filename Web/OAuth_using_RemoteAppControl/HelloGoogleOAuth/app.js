@@ -131,7 +131,7 @@ function consentLogin(userCode) {
 	intervalTime = userCode.interval*1000;
 
 	var remoteAppCtrl = new webapis.RemoteApplicationControl(
-			"http://tizen.org/appcontrol/operation/remote/view",
+			"http://samsung.com/appcontrol/operation/remote/view",
 			userCode.verification_url, null, null, null
 		);
 
