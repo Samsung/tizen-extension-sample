@@ -18,8 +18,8 @@ var intervalTime = null;
 var intervalObj = null;
 var tokenObj = null;
 
-var CLIENT_TOKEN = "858962ab4fa1e25a48fadb542c31d474";
-var APP_ID = "315368525479289";
+var CLIENT_TOKEN = "ff707ebd0d6069612741fb916bab5237";
+var APP_ID = "1901426870089258";
 
 function toastPopup(contentString)
 {
@@ -126,7 +126,7 @@ function consentLogin(userCode) {
 	intervalTime = userCode.interval*1000;
 	
 	var remoteAppCtrl = new webapis.RemoteApplicationControl(
-			"http://tizen.org/appcontrol/operation/remote/view",
+			"http://samsung.com/appcontrol/operation/remote/view",
 			userCode.verification_uri, null, null, null
 		);
 
