@@ -1,0 +1,73 @@
+
+styles {
+   style {
+      name: "textblock_digit_style";
+      base: "font=SNum-3T:style=Regular font_size=25 color=#ffffff align=center wrap=mixed";
+      tag:  "br" "\n";
+      tag:  "tab" "\t";
+   }
+}
+collections {
+   group {
+      name: "main";
+      parts {
+         part {
+            name: "bg";
+            type: RECT;
+            description {
+               rel1 {
+                  relative: 0.0 0.0;
+               }
+               ;
+               rel2 {
+                  relative: 1.0 1.0;
+               }
+               ;
+               color: 0 0 0 0;
+            }
+         }
+         part {
+            name: "content.textblock";
+            type: TEXTBLOCK;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               fixed : 1 1;
+               align: 0.5 0.5;
+               rel1 {
+                  relative: 0.0 0.2;
+                  to: "bg";
+               }
+               rel2 {
+                  relative: 1.0 0.72;
+                  to: "bg";
+               }
+               color: 255 255 255 255;
+               text {
+                  text: "";
+                  style: "textblock_digit_style";
+                  align: 0.5 0.5;
+               }
+            }
+         }
+         part {
+            name: "button";
+            type: SWALLOW;
+            description {
+               min: 0 80;
+               max: -1 80;
+               fixed: 1 1;
+               align: 0.5 1.0;
+               rel1 {
+                  relative: 0.0 1.0;
+                  to: "bg";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "bg";
+               }
+            }
+         }
+      }
+   }
+}

@@ -18,8 +18,8 @@ var intervalTime = null;
 var intervalObj = null;
 var tokenObj = null;
 
-var CLIENT_TOKEN = "ff707ebd0d6069612741fb916bab5237";
-var APP_ID = "1901426870089258";
+var CLIENT_TOKEN = "ee152bba9f3aaf2aea38752996a8c7c5";
+var APP_ID = "1418696321484314";
 
 function toastPopup(contentString)
 {
@@ -121,25 +121,29 @@ function consentLogin(userCode) {
 	var txt_content = document.getElementById("text-content");
 	txt_content.innerHTML = userCode.user_code; 
 	console.log("url...:" + userCode.verification_uri);
-	
+
 	deviceCode = userCode.code;
 	intervalTime = userCode.interval*1000;
-	
-	var remoteAppCtrl = new webapis.RemoteApplicationControl(
-			"http://samsung.com/appcontrol/operation/remote/view",
-			userCode.verification_uri, null, null, null
-		);
 
-	try {
-		webapis.remoteappcontrol.launchRemoteAppControl( remoteAppCtrl,
-			function () {
-				console.log("success");
+	var appid = "tizen.wearablemanager",
+    extra_data = [new tizen.ApplicationControlData("type", ["launch-remote-browser"])];
 
-				intervalObj = setInterval(pollAccessToken, intervalTime);
-			}, function(e) {toastPopup("failed : " + e.message);});
-	} catch(e) {
-		toastPopup("Error Exception, error name : " + e.name + ", error message : " + e.message);
-	}
+    var appControl = new tizen.ApplicationControl(
+        "http://tizen.org/appcontrol/operation/default",
+        userCode.verification_uri,
+        null,
+        null,
+        extra_data
+   );
+    
+  tizen.application.launchAppControl(appControl, appid,
+	function() {
+	  	console.log("success");
+	  	toastPopup("enter user code to mobile");
+	  	intervalObj = setInterval(pollAccessToken, intervalTime);
+  	}, 
+    function(e) { toastPopup("failed : " + e.message); }
+  );
 }
 
 function requestUserCode() {
