@@ -12,10 +12,10 @@ These are Tizen sample application projects that uses Samsung Extension API to p
 ```
 ├── Native
 │   ├── InAppPurchase
-│   ├── OAuth_using_RemoteAppControl
+│   ├── OAuth_using_AppControls
 │   └── RemoteAppControl
 └── Web
     ├── InAppPurchase
-    ├── OAuth_using_RemoteAppControl
+    ├── OAuth_using_AppControls
     └── RemoteAppControl
 ```
