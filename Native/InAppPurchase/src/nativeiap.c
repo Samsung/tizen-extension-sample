@@ -1,4 +1,4 @@
-/*
+2/*
  * Copyright (c) 2017 Samsung Electronics Co., Ltd. All rights reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -273,7 +273,7 @@ static void my_items_btn_cb(void *data, Evas_Object *obj, void *event_info)
 	if (++toggle % 2 == 0) {
 		// #1. iap_galaxyapps_get_purchased_item_list
 		dlog_print(DLOG_INFO, LOG_TAG, "GET PUCHASED ITEMS");
-		ret = iap_galaxyapps_get_purchased_item_list(1, 10, "20160101", "20161231", get_purchased_item_list_cb, NULL);
+		ret = iap_galaxyapps_get_purchased_item_list(1, 10, "20160101", "20201231", get_purchased_item_list_cb, NULL);
 	} else {
 		// #2. iap_galaxyapps_get_item_list_by_item_ids
 		char ids[512] = {0,};
