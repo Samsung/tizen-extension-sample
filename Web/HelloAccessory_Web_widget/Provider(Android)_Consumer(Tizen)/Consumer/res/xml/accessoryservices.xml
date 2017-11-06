@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <application name="HelloAccessoryConsumers" >
+        <serviceProfile
+            id="/sample/hello"
+            name="helloaccessory"
+            role="consumer"
+            version="1.0" >
+            <supportedTransports>
+                <transport type="TRANSPORT_BT" />
+                <transport type="TRANSPORT_WIFI"/>
+            </supportedTransports>
+            <serviceChannel
+                id="104"
+                dataRate="low"
+                priority="low"
+                reliability="enable" >
+            </serviceChannel>
+        </serviceProfile>
+    </application>
+</resources>

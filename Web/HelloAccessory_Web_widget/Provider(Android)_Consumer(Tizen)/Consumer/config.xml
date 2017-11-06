@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/HelloAccessoryWidgetConsumer" version="1.0.0">
+    <tizen:app-widget id="UtjQiV9tfv.HelloAccessoryWidgetConsumer.HelloAccessoryWidgetConsumer" primary="true">
+        <tizen:widget-label>Hello Web Widget!</tizen:widget-label>
+        <tizen:widget-metadata key="AccessoryServicesLocation" value="res/xml/accessoryservices.xml"/>
+        <!-- <tizen:widget-metadata key="AccessoryServicesLocation" value="widget/HelloAccessoryWidgetConsumer/res/xml/accessoryservices.xml"/> -->
+        <tizen:widget-content src="index.html">
+            <tizen:widget-size preview="preview.png">2x2</tizen:widget-size>
+        </tizen:widget-content>
+    </tizen:app-widget>
+    <tizen:application id="UtjQiV9tfv.HelloAccessoryWidgetConsumer" package="UtjQiV9tfv" required_version="2.3.2"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <feature name="http://developer.samsung.com/tizen/feature/network.accessory_protocol"/>
+    <icon src="icon.png"/>
+    <name>HelloAccessoryWidgetConsumer</name>
+    <tizen:privilege name="http://developer.samsung.com/tizen/privilege/accessoryprotocol"/>
+    <tizen:profile name="wearable"/>
+</widget>
