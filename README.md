@@ -17,5 +17,6 @@ These are Tizen sample application projects that uses Samsung Extension API to p
 └── Web
     ├── InAppPurchase
     ├── OAuth_using_AppControls
-    └── RemoteAppControl
+    ├── RemoteAppControl
+    └── HelloAccessory_Web_widget
 ```
