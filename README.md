@@ -2,11 +2,13 @@
 These are Tizen sample application projects that uses Samsung Extension API to provide advanced access to the Samsung device's platform capabilities.
 
 ### References
-* [SDK Installation](http://developer.samsung.com/gear/develop/tech-doc/tizen-extension-sdk-guide)
+* [SDK Installation](https://developer.samsung.com/galaxy-watch-develop/techdoc/tizen-extension-sdk-guide.html)
 
-* [SDK Release Note](http://developer.samsung.com/gear/develop/tech-doc/wearable-extension-releases)
+* [SDK Release Note](https://developer.samsung.com/galaxy-watch-develop/wearable-extension-release-note.html)
 
-* [Programming Guide](http://developer.samsung.com/gear/develop/tech-doc/tizen-wearable-extension-programming-guide)
+* Programming Guide
+  * [Native](https://developer.samsung.com/galaxy-watch-develop/tizen-wearable-extension-programming-guide-native.html)
+  * [Web](https://developer.samsung.com/galaxy-watch-develop/tizen-wearable-extension-programming-guide-web.html)
 
 ### Project structure
 ```
