@@ -22,8 +22,8 @@
 #include <pthread.h>
 #include <app_control.h>
 
-#define CLIENT_ID "985249717635-m2g710rhvtpj8qeefmivv7c5j9eojkrp.apps.googleusercontent.com"
-#define CLIENT_SECRET "xwypl235JB7dljd7EjnrVWRN"
+#define CLIENT_ID "<YOUR_CLIENT_ID>"
+#define CLIENT_SECRET "<YOUR_CLIENT_SECRET>"
 
 typedef struct _user_code_response_s{
 	char verification_url[256];
