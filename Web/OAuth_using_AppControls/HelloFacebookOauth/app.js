@@ -18,8 +18,8 @@ var intervalTime = null;
 var intervalObj = null;
 var tokenObj = null;
 
-var CLIENT_TOKEN = "ee152bba9f3aaf2aea38752996a8c7c5";
-var APP_ID = "1418696321484314";
+var CLIENT_TOKEN = "<YOUR_CLIENT_TOKEN>";
+var APP_ID = "<YOUR_APP_ID>";
 
 function toastPopup(contentString)
 {

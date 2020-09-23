@@ -20,8 +20,8 @@
 #include <json-glib/json-glib.h>
 #include <app_control.h>
 
-#define CLIENT_TOKEN "ff707ebd0d6069612741fb916bab5237"
-#define APP_ID "1901426870089258"
+#define CLIENT_TOKEN "<YOUR_CLIENT_TOKEN>"
+#define APP_ID "<YOUR_APP_ID>"
 
 typedef struct _user_code_response_s{
 	char verification_uri[256];
