@@ -18,8 +18,8 @@ var intervalTime = null;
 var intervalObj = null;
 var tokenObj = null;
 
-var CLIENT_ID = "985249717635-m2g710rhvtpj8qeefmivv7c5j9eojkrp.apps.googleusercontent.com";
-var CLIENT_SECRET = "xwypl235JB7dljd7EjnrVWRN";
+var CLIENT_ID = "<YOUR_CLIENT_ID>";
+var CLIENT_SECRET = "<YOUR_CLIENT_SECRET>";
 
 var userCodeResponse = function(data) {
 	Object.defineProperties(this, {
