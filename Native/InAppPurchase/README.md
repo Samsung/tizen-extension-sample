@@ -1,8 +1,6 @@
 ### Prerequisites
 
-* 'SamsungBilling' application should be installed on Android device connecting with Gear.
-  If there is no 'SamsungBilling', please download it from GalaxyApps.
-
-* To connect Gear Emulator to Android device, please refer to below page.
-  [http://developer.samsung.com/gear/develop/testing-your-app-on-gear]
+* In order to complete the in-app purchase, the 'Samsung Checkout' app must be installed on the Android phone connected to the Galaxy Watch.
+Most Samsung phones have 'Samsung Checkout' installed.
+In non-Samsung phones, the app is automatically downloaded when an in-app purchase is attempted, and installed after user consent is obtained.
 
