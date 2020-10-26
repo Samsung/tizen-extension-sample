@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest package="org.tizen.example.FileTransferS" version="1.0.0" api-version="4.0" xmlns="http://tizen.org/ns/packages">
+  <profile name="wearable" />
+  <ui-application appid="org.tizen.example.FileTransferS"
+                  exec="FileTransferS.dll"
+                  multiple="false"
+                  nodisplay="false"
+                  taskmanage="true"
+                  type="dotnet"
+                  launch_mode="single">
+    <label>FileTransferS</label>
+    <icon>icon.png</icon>
+    <metadata key="http://tizen.org/metadata/prefer_dotnet_aot" value="true" />
+    <metadata key="accessory-services-location" value="/res/xml/accessoryservices.xml" />
+  </ui-application>
+  <feature name="http://tizen.org/feature/screen.size.normal">true</feature>
+  <feature name="http://tizen.org/feature/screen.shape.circle">true</feature>
+  <privileges>
+    <privilege>http://developer.samsung.com/tizen/privilege/accessoryprotocol</privilege>
+  </privileges>
+</manifest>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <application name="org.tizen.example.FileTransferR">
+    <serviceProfile
+        id="/sample/filetransfer"
+        name="FileTransferReceiver"
+        role="provider"
+        autoLaunchAppId="org.tizen.example.FileTransferR"
+        version="1.0">
+      <supportedTransports>
+        <transport type="TRANSPORT_BT"/>
+        <transport type="TRANSPORT_WIFI" />
+        <transport type="TRANSPORT_BLE"/>
+      </supportedTransports>
+      <serviceChannel
+          id="107"
+          dataRate="low"
+          priority="low"
+          reliability="enable"/>
+    </serviceProfile>
+  </application>
+</resources>
+

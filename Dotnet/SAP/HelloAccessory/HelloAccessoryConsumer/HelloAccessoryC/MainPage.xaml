@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HelloAccessoryC.Constants"
+             x:Class="HelloAccessoryC.MainPage">
+  <ContentPage.Content>
+    <ListView VerticalOptions="Center" 
+              HorizontalOptions="CenterAndExpand"
+              ItemTapped="ListView_ItemTapped">
+      <ListView.Header>
+        <x:String>Hello Accessory Consumer</x:String>
+      </ListView.Header>
+      <ListView.HeaderTemplate>
+        <DataTemplate>
+          <Label Text="{Binding .}" 
+                 FontAttributes="Bold" 
+                 TextColor="Aqua" 
+                 FontSize="12" 
+                 HorizontalTextAlignment="Center" 
+                 HeightRequest="{x:Static local:UIConstants.HeaderHeight}"
+                 WidthRequest="{x:Static local:UIConstants.HeaderWidth}"/>
+        </DataTemplate>
+      </ListView.HeaderTemplate>
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <TextCell Text="{Binding .}"/>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+      <ListView.ItemsSource>
+        <x:Array Type="{x:Type x:String}">
+          <x:String>Connect</x:String>
+          <x:String>Fetch</x:String>
+          <x:String>Disconnect</x:String>
+        </x:Array>
+      </ListView.ItemsSource>
+    </ListView>
+  </ContentPage.Content>
+</ContentPage>
+

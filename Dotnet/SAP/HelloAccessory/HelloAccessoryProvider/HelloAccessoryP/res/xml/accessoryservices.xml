@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <application name="org.tizen.example.HelloAccessoryP">
+    <serviceProfile
+        id="/sample/hello"
+        name="HelloAccessoryProvider"
+        role="provider"
+        version="1.0">
+      <supportedTransports>
+        <transport type="TRANSPORT_BT"/>
+        <transport type="TRANSPORT_WIFI" />
+      </supportedTransports>
+      <serviceChannel
+          id="104"
+          dataRate="low"
+          priority="low"
+          reliability="enable"/>
+    </serviceProfile>
+  </application>
+</resources>
+
