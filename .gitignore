@@ -1,0 +1,7 @@
+### VisualStudio ###
+
+Dotnet/**/bin/
+Dotnet/**/obj/
+Dotnet/**/.vs/
+Dotnet/**/*.user
+
