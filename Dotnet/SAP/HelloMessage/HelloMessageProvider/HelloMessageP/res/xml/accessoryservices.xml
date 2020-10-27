@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <application name="org.tizen.example.HelloMessageP">
+    <serviceProfile
+        id="/sample/hellomessage"
+        name="HelloMessageProvider"
+        role="provider"
+        autoLaunchAppId="org.tizen.example.HelloMessageP"
+        version="1.0">
+      <supportedTransports>
+        <transport type="TRANSPORT_BT"/>
+      </supportedTransports>
+      <serviceChannel
+          id="104"
+          dataRate="low"
+          priority="low"
+          reliability="enable"/>
+    </serviceProfile>
+    <supportedFeatures>
+      <feature type="message"/>
+    </supportedFeatures>
+  </application>
+</resources>
+

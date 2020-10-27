@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HelloMessageP.Constants"
+             x:Class="HelloMessageP.MainPage">
+    <ContentPage.Content>
+    <StackLayout Padding="{x:Static local:UIConstants.SquareInCirclePadding}">
+      <Label Text="Hello Message Provider"
+             VerticalOptions="CenterAndExpand" 
+             HorizontalOptions="CenterAndExpand"
+             HorizontalTextAlignment="Center"
+             FontSize="12"
+             TextColor="Aqua"/>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
+

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloAccessoryP", "HelloAccessoryP\HelloAccessoryP.csproj", "{063FB5C3-CB7E-4888-AC6E-92766E16D566}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{063FB5C3-CB7E-4888-AC6E-92766E16D566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{063FB5C3-CB7E-4888-AC6E-92766E16D566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{063FB5C3-CB7E-4888-AC6E-92766E16D566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{063FB5C3-CB7E-4888-AC6E-92766E16D566}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F884A5C3-8CEF-45EE-9B6A-EA62DCA9ACD6}
+	EndGlobalSection
+EndGlobal

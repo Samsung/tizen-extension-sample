@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HelloMessageC.MainPage">
+    <ContentPage.Content>
+    <ListView x:Name="listView"
+              VerticalOptions="Center"
+              HorizontalOptions="CenterAndExpand"
+              HeightRequest="300"
+              WidthRequest="300"
+              ItemTapped="ListView_ItemTapped">
+      <ListView.Header>
+        <x:String>Hello Message Consumer</x:String>
+      </ListView.Header>
+      <ListView.HeaderTemplate>
+        <DataTemplate>
+          <Label Text="{Binding .}" FontAttributes="Bold" TextColor="Aqua" FontSize="12" HorizontalTextAlignment="Center"/>
+        </DataTemplate>
+      </ListView.HeaderTemplate>
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <TextCell Text="{Binding .}"/>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+      <ListView.ItemsSource>
+        <x:Array Type="{x:Type x:String}">
+          <x:String>Find Peer</x:String>
+          <x:String>Fetch</x:String>
+        </x:Array>
+      </ListView.ItemsSource>
+    </ListView>
+    </ContentPage.Content>
+</ContentPage>
+

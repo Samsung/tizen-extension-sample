@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="4.0" package="org.tizen.example.HelloAccessoryC" version="1.0.0">
+  <profile name="wearable" />
+  <ui-application appid="org.tizen.example.HelloAccessoryC"
+					exec="HelloAccessoryC.dll"
+					type="dotnet"
+					multiple="false"
+					taskmanage="true"
+					nodisplay="false"
+					launch_mode="single">
+    <label>HelloAccessoryC</label>
+    <icon>icon.png</icon>
+    <metadata key="http://tizen.org/metadata/prefer_dotnet_aot" value="true" />
+    <metadata key="accessory-services-location" value="/res/xml/accessoryservices.xml"/>
+  </ui-application>
+  <feature name="http://tizen.org/feature/screen.size.normal">true</feature>
+  <feature name="http://tizen.org/feature/screen.shape.circle">true</feature>
+  <privileges>
+    <privilege>http://developer.samsung.com/tizen/privilege/accessoryprotocol</privilege>
+  </privileges>
+</manifest>

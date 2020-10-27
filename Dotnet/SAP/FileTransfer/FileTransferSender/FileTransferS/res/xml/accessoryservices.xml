@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <application name="org.tizen.example.FileTransferS">
+    <serviceProfile
+        id="/sample/filetransfer"
+        name="FileTransferSender"
+        role="consumer"
+        version="2.0"
+        serviceLimit="ONE_PEERAGENT"
+        serviceTimeout="30">
+      <supportedTransports>
+        <transport type="TRANSPORT_BT"/>
+        <transport type="TRANSPORT_WIFI" />
+        <transport type="TRANSPORT_BLE"/>
+      </supportedTransports>
+      <serviceChannel
+          id="107"
+          dataRate="low"
+          priority="low"
+          reliability="enable"/>
+    </serviceProfile>
+  </application>
+</resources>
+

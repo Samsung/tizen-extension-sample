@@ -9,9 +9,12 @@ These are Tizen sample application projects that uses Samsung Extension API to p
 * Programming Guide
   * [Native](https://developer.samsung.com/galaxy-watch-develop/tizen-wearable-extension-programming-guide-native.html)
   * [Web](https://developer.samsung.com/galaxy-watch-develop/tizen-wearable-extension-programming-guide-web.html)
+  * [Dotnet](https://developer.samsung.com/tizen/About-Tizen.NET/Tizen.NET.html)
 
 ### Project structure
 ```
+├── Dotnet
+│   ├── SAP
 ├── Native
 │   ├── InAppPurchase
 │   ├── OAuth_using_AppControls
